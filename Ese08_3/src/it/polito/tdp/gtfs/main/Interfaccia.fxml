@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.gtfs.main.InterfacciaController">
+<center><VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+<children><HBox prefHeight="100.0" prefWidth="200.0">
+<children><Label prefHeight="82.0" prefWidth="323.0" text="Fermate per un percorso" textFill="#eb0707">
+<font>
+<Font size="25.0" />
+</font></Label>
+</children></HBox><HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+<children><Label text="Stazione di partenza" /><ChoiceBox fx:id="stazionePartenza" prefWidth="150.0" />
+</children>
+<padding>
+<Insets top="30.0" />
+</padding></HBox><HBox prefHeight="73.0" prefWidth="400.0" spacing="30.0">
+<children><Label prefHeight="25.0" prefWidth="165.0" text="Stazione di arrivo" /><ChoiceBox fx:id="stazioneArrivo" prefWidth="150.0" /><Button fx:id="cercabtn" mnemonicParsing="false" onAction="#doCerca" prefHeight="18.0" prefWidth="149.0" text="Cerca Percorso" />
+</children>
+<padding>
+<Insets top="30.0" />
+</padding></HBox><HBox prefHeight="170.0" prefWidth="400.0">
+<children><TextArea fx:id="txtresult" editable="false" prefHeight="162.0" prefWidth="400.0" />
+</children></HBox>
+</children></VBox>
+</center></BorderPane>
